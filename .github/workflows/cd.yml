@@ -14,7 +14,8 @@ jobs:
         uses: appleboy/ssh-action@v0.1.10
         with:
           host: 52.35.34.186  
-          username: root        
+          username: ec2-user
+        
           key: ${{ secrets.SSH_PRIVATE_KEY }}  # Store your SSH key in GitHub Secrets
           script: |
             cd ~/fastapi-book-project
