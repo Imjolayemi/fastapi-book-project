@@ -13,6 +13,7 @@ jobs:
       - name: Deploy to server
         uses: appleboy/ssh-action@v0.1.10
         with:
+      
           host: 3.86.196.153
           username: ec2-user        
           key: ${{ secrets.SSH_PRIVATE_KEY }}  # Store your SSH key in GitHub Secrets
